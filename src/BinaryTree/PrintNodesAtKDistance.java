@@ -10,26 +10,25 @@ _________________________________________________
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<+*&-------------------&*+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 */
-#include <bits/stdc++.h>
+package BinaryTree;
 
-using namespace std;
+public class PrintNodesAtKDistance {
 
-class ASCII {
-
-  public:
-
-    void value() {
-
-      char c = 'A';
-      cout << "The ASCII value of " << c << " is " << int(c);
+  static void printKNodes(Node root, int k){
+    if(root == null){
+      return;
     }
-};
-int main() {
+    if(k == 0){
+      System.out.println(root.value);
+      return;
+    }
+    printKNodes(root.left, k-1);
+    printKNodes(root.right, k-1);
+  }
 
-  ASCII p1;
-  p1.value();
+  public static void main(String[] args) {
+    Node root = Node.createBinaryTree();
+    printKNodes(root, 1);
+  }
 
-  return 0;
 }
-
-// output The ASCII value of A is 65 ,     Time Complexity: O(1)  Space Complexity: O(1)

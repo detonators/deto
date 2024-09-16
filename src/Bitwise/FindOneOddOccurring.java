@@ -10,26 +10,19 @@ _________________________________________________
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<+*&-------------------&*+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 */
-#include <bits/stdc++.h>
+package Bitwise;
 
-using namespace std;
-
-class ASCII {
-
-  public:
-
-    void value() {
-
-      char c = 'A';
-      cout << "The ASCII value of " << c << " is " << int(c);
+public class FindOneOddOccurring {
+  public static int find(int[] arr){
+    int res = 0;
+    for (int j : arr) {
+      res = res ^ j;
     }
-};
-int main() {
+    System.out.println(res);
+    return res;
+  }
 
-  ASCII p1;
-  p1.value();
-
-  return 0;
+  public static void main(String[] args) {
+    find(new int[]{1,1,2,3,3});
+  }
 }
-
-// output The ASCII value of A is 65 ,     Time Complexity: O(1)  Space Complexity: O(1)

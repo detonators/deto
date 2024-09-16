@@ -10,26 +10,18 @@ _________________________________________________
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<+*&-------------------&*+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 */
-#include <bits/stdc++.h>
+package Concept;
 
-using namespace std;
-
-class ASCII {
-
-  public:
-
-    void value() {
-
-      char c = 'A';
-      cout << "The ASCII value of " << c << " is " << int(c);
+public class BaseClass {
+    int i =1;
+    BaseClass(int i){
+        this.i = i;
     }
-};
-int main() {
 
-  ASCII p1;
-  p1.value();
-
-  return 0;
+    @Override
+    public String toString() {
+        return "BaseClass{" +
+                "i=" + i +
+                '}';
+    }
 }
-
-// output The ASCII value of A is 65 ,     Time Complexity: O(1)  Space Complexity: O(1)

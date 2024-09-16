@@ -10,26 +10,24 @@ _________________________________________________
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<+*&-------------------&*+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 */
-#include <bits/stdc++.h>
+package Mathematics;
 
-using namespace std;
-
-class ASCII {
-
-  public:
-
-    void value() {
-
-      char c = 'A';
-      cout << "The ASCII value of " << c << " is " << int(c);
+public class Divisors {
+  // tc : O(sqrt n)
+  static void findDivisors(int n){
+    int i = 1;
+    for(; i*i <= n; i++){
+      if(n % i == 0){
+        System.out.println(i);
+      }
     }
-};
-int main() {
-
-  ASCII p1;
-  p1.value();
-
-  return 0;
+    for(; i >= 2; i--){
+      if(n % i == 0){
+        System.out.println(n/i);
+      }
+    }
+  }
+  public static void main(String[] args) {
+    findDivisors(48);
+  }
 }
-
-// output The ASCII value of A is 65 ,     Time Complexity: O(1)  Space Complexity: O(1)

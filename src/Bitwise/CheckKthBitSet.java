@@ -10,26 +10,29 @@ _________________________________________________
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<+*&-------------------&*+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 */
-#include <bits/stdc++.h>
+package Bitwise;
 
-using namespace std;
+public class CheckKthBitSet {
 
-class ASCII {
+  static void checkForKthBit(int n, int k){
+    // find 2 to th power k-1;
+    int x = 1 << (k-1);
 
-  public:
+    System.out.println((n & x) != 0);
+  }
 
-    void value() {
+  public static void main(String[] args) {
+    /*
+      n = 7 => 111
+      k = 1
+      x = 001
 
-      char c = 'A';
-      cout << "The ASCII value of " << c << " is " << int(c);
-    }
-};
-int main() {
+      k = 2
+      x = 010
+      111 & 010 = 010 => 2
 
-  ASCII p1;
-  p1.value();
+     */
+    checkForKthBit(7, 1);
+  }
 
-  return 0;
 }
-
-// output The ASCII value of A is 65 ,     Time Complexity: O(1)  Space Complexity: O(1)

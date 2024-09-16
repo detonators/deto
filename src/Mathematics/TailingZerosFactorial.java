@@ -10,26 +10,20 @@ _________________________________________________
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<+*&-------------------&*+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 */
-#include <bits/stdc++.h>
+package Mathematics;
 
-using namespace std;
+// tc : O(logn) log to the base of 5
+public class TailingZerosFactorial {
 
-class ASCII {
-
-  public:
-
-    void value() {
-
-      char c = 'A';
-      cout << "The ASCII value of " << c << " is " << int(c);
+  static int findTrailingZeros(int n){
+    int res = 0;
+    for (int i = 5; i < n ; i*=5){
+      res += n/i;
     }
-};
-int main() {
+    return res;
+  }
+  public static void main(String[] args) {
+    System.out.println(findTrailingZeros(100));
+  }
 
-  ASCII p1;
-  p1.value();
-
-  return 0;
 }
-
-// output The ASCII value of A is 65 ,     Time Complexity: O(1)  Space Complexity: O(1)

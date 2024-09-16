@@ -10,26 +10,16 @@ _________________________________________________
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<+*&-------------------&*+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 */
-#include <bits/stdc++.h>
+package linkedList;
 
-using namespace std;
+// Template for linked list node class
 
-class ASCII {
-
-  public:
-
-    void value() {
-
-      char c = 'A';
-      cout << "The ASCII value of " << c << " is " << int(c);
+public class LinkedListNode {
+    public int data;
+    public LinkedListNode next;
+    // Constructor will be used to make a LinkedListNode type object
+    public LinkedListNode(int data) {
+        this.data = data;
+        this.next = null;
     }
-};
-int main() {
-
-  ASCII p1;
-  p1.value();
-
-  return 0;
 }
-
-// output The ASCII value of A is 65 ,     Time Complexity: O(1)  Space Complexity: O(1)
