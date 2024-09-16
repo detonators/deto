@@ -10,26 +10,17 @@ _________________________________________________
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<+*&-------------------&*+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 */
-#include <bits/stdc++.h>
+package Bitwise;
 
-using namespace std;
-
-class ASCII {
-
-  public:
-
-    void value() {
-
-      char c = 'A';
-      cout << "The ASCII value of " << c << " is " << int(c);
+public class EvenOdd {
+  static void isEven(int n){
+    if((n & 1) == 1){
+      System.out.println("odd");
+    }else {
+      System.out.println("even");
     }
-};
-int main() {
-
-  ASCII p1;
-  p1.value();
-
-  return 0;
+  }
+  public static void main(String[] args) {
+    isEven(21);
+  }
 }
-
-// output The ASCII value of A is 65 ,     Time Complexity: O(1)  Space Complexity: O(1)

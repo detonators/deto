@@ -10,26 +10,17 @@ _________________________________________________
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<+*&-------------------&*+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 */
-#include <bits/stdc++.h>
+package Mathematics;
+/*
+Least common multiple
 
-using namespace std;
-
-class ASCII {
-
-  public:
-
-    void value() {
-
-      char c = 'A';
-      cout << "The ASCII value of " << c << " is " << int(c);
-    }
-};
-int main() {
-
-  ASCII p1;
-  p1.value();
-
-  return 0;
+ */
+public class LCM {
+  // O(log(min(a,b))
+  static int lcm(int a, int b){
+    return a*b / HCF.hcfOptimized(a, b);
+  }
+  public static void main(String[] args) {
+    System.out.println(lcm(4, 6));
+  }
 }
-
-// output The ASCII value of A is 65 ,     Time Complexity: O(1)  Space Complexity: O(1)

@@ -10,26 +10,31 @@ _________________________________________________
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<+*&-------------------&*+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 */
-#include <bits/stdc++.h>
+package BinaryTree;
 
-using namespace std;
+public class Pair<T, U> {
 
-class ASCII {
+    private T key;
+    private U value;
 
-  public:
-
-    void value() {
-
-      char c = 'A';
-      cout << "The ASCII value of " << c << " is " << int(c);
+    public Pair(T key, U value) {
+        this.key = key;
+        this.value = value;
     }
-};
-int main() {
 
-  ASCII p1;
-  p1.value();
+    public T getKey() {
+        return key;
+    }
 
-  return 0;
+    public void setKey(T key) {
+        this.key = key;
+    }
+
+    public U getValue() {
+        return value;
+    }
+
+    public void setValue(U value) {
+        this.value = value;
+    }
 }
-
-// output The ASCII value of A is 65 ,     Time Complexity: O(1)  Space Complexity: O(1)

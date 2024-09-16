@@ -10,26 +10,18 @@ _________________________________________________
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<+*&-------------------&*+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 */
-#include <bits/stdc++.h>
+package interview;
 
-using namespace std;
+public class CARS24 {
 
-class ASCII {
+  public static void main(String[] args) {
+    int n = 65;
+    n |= n >>> 1;
+    n |= n >>> 2;
+    n |= n >>> 4;
+    n |= n >>> 8;
+    n |= n >>> 16;
 
-  public:
-
-    void value() {
-
-      char c = 'A';
-      cout << "The ASCII value of " << c << " is " << int(c);
-    }
-};
-int main() {
-
-  ASCII p1;
-  p1.value();
-
-  return 0;
+    System.out.println(n);
+  }
 }
-
-// output The ASCII value of A is 65 ,     Time Complexity: O(1)  Space Complexity: O(1)

@@ -10,26 +10,26 @@ _________________________________________________
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<+*&-------------------&*+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 */
-#include <bits/stdc++.h>
+package Array;
 
-using namespace std;
+public class MedianSortedArray {
 
-class ASCII {
+    public static void main(String[] args) {
+        int[] arr1 = {1, 2, 5, 22};
+        int[] arr2 = {3, 6, 9, 14, 17};
 
-  public:
-
-    void value() {
-
-      char c = 'A';
-      cout << "The ASCII value of " << c << " is " << int(c);
+        findMedian(arr1, arr2);
     }
-};
-int main() {
 
-  ASCII p1;
-  p1.value();
+    private static void findMedian(int[] arr1, int[] arr2) {
+        int n = arr1.length;
+        int m = arr2.length;
 
-  return 0;
+        if(n > m){
+            findMedian(arr2, arr1);
+        }
+
+
+    }
+
 }
-
-// output The ASCII value of A is 65 ,     Time Complexity: O(1)  Space Complexity: O(1)

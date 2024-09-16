@@ -10,26 +10,16 @@ _________________________________________________
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<+*&-------------------&*+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 */
-#include <bits/stdc++.h>
+package Bitwise;
 
-using namespace std;
+public class PowerOf2 {
 
-class ASCII {
+  static void isPower2(int n){
+    System.out.println((n & (n & n-1)) == 0); // first conition is to check for n == 0
+  }
 
-  public:
+  public static void main(String[] args) {
+    isPower2(40);
+  }
 
-    void value() {
-
-      char c = 'A';
-      cout << "The ASCII value of " << c << " is " << int(c);
-    }
-};
-int main() {
-
-  ASCII p1;
-  p1.value();
-
-  return 0;
 }
-
-// output The ASCII value of A is 65 ,     Time Complexity: O(1)  Space Complexity: O(1)
